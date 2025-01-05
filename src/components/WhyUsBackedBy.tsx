@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 import localFont from "next/font/local";
 import BackedBy from "./BackedBy";
 const primary = localFont({
-  src: "./../app/fonts/vogue.ttf",
+  src: "./../app/fonts/Vogue.ttf",
 });
 const secondary = localFont({
   src: "./../app/fonts/ppneuemontreal-thin.otf",

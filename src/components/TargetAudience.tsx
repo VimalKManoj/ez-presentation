@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 import gsap from "gsap";
 
 const primary = localFont({
-  src: "./../app/fonts/vogue.ttf",
+  src: "./../app/fonts/Vogue.ttf",
 });
 const secondary = localFont({
   src: "./../app/fonts/ppneuemontreal-thin.otf",

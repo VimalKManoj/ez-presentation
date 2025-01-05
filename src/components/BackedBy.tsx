@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import { FaInstagram } from "react-icons/fa";
 
 const primary = localFont({
-  src: "./../app/fonts/Vogue.ttf",
+  src: "./../app/fonts/RadiantLight.ttf",
 });
 const secondary = localFont({
   src: "./../app/fonts/ppneuemontreal-medium.otf",

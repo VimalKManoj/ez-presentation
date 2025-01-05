@@ -113,7 +113,7 @@ function BrandStory() {
         <h1
           className={`${primary.className} text-5xl z-50 relative  main w-fit`}
         >
-          Brand's History
+          Brand’s History
           <span className="inline-block w-full h-1 scale-x-0 origin-left bg-red-800 absolute inset-0 left-0 my-auto strike"></span>
         </h1>
         <h1

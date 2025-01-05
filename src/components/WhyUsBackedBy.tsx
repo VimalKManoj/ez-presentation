@@ -9,8 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 import localFont from "next/font/local";
 import BackedBy from "./BackedBy";
+
 const primary = localFont({
-  src: "./../app/fonts/Vogue.ttf",
+  src: "./../app/fonts/RadiantLight.ttf",
 });
 const secondary = localFont({
   src: "./../app/fonts/ppneuemontreal-thin.otf",
@@ -99,8 +100,8 @@ function WhyUsBackedBy() {
               className={`${secondary.className} text-2xl z-50 relative w-1/2 text-center flex-1 px-20 `}
             >
               The iconic UB City aligns with EZ’s vision to be a global brand in
-              the lifestyle space. And it provides the perfect launchpad for
-              the brand.
+              the lifestyle space. And it provides the perfect launchpad for the
+              brand.
             </h1>
             <h1
               className={`${secondary.className} text-2xl z-50 relative w-1/2 text-center flex-1 px-20 `}

@@ -88,7 +88,7 @@ function WhyUsBackedBy() {
             className={`${secondary.className} text-4xl z-50 relative w-1/2 text-center  `}
           >
             Our focus is on creating garments that combine elegance and
-            function. Every detail serves a purpose, ensuring you're always
+            function. Every detail serves a purpose, ensuring you’re always
             dressed for success.
           </h1>
         </div>

@@ -78,7 +78,7 @@ function TargetAudience() {
         ref={hiddenTextRef}
         className={`text-4xl pt-6 ${secondary.className} opacity-0 `}
       >
-        Different isn't Daring, It's Essential.
+        Different isn’t Daring, It’s Essential.
       </span>
       <h1
         className={`absolute -bottom-10 right-0 text-[10rem] ${secondary.className} opacity-0 transition-opacity different`}

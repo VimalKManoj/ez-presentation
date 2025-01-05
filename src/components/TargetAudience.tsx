@@ -54,24 +54,28 @@ function TargetAudience() {
   return (
     <div className="h-screen w-[90vw] relative flex justify-center flex-col items-center px-40 ">
       {/* "For Whom" Text */}
-      <h1
+      <div
+        className="flex justify-center items-center hover:text-red-800 transition-all duration-200 cursor-pointer"
         ref={forWhomRef}
-        className={`text-7xl ${primary.className} hover:text-red-800 transition-all duration-200 cursor-pointer pl-8`}
-        onClick={handleClick}
       >
-        For Whom{" "}
-        <span className="relative">
-          <span ref={questionMarkRef} className="transition-opacity">
+        <h1
+          className={`text-7xl ${primary.className}  pl-8`}
+          onClick={handleClick}
+        >
+          For Whom{" "}
+        </h1>
+        <h1 className={`text-7xl ${primary.className} relative pl-2`}>
+          <span ref={questionMarkRef} className="transition-opacity text-7xl">
             ?
           </span>
           <span
             ref={hyphenRef}
-            className="absolute left-0 top-6 opacity-0 transition-opacity"
+            className="absolute left-0  opacity-0 transition-opacity pl-4"
           >
             -
           </span>
-        </span>
-      </h1>
+        </h1>
+      </div>
 
       {/* Hidden Text */}
       <span

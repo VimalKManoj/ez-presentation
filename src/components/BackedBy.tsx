@@ -20,12 +20,12 @@ function BackedBy() {
   return (
     <section className="w-full min-h-screen flex flex-col gap-20 justify-around z-20 px-6 md:px-10 bg-white text-black md:text-inherit md:bg-transparent mb-96">
       <div className="flex flex-col md:flex-row justify-around items-center w-full md:h-screen">
-        <div className="flex flex-col items-start justify-around flex-1 p-6 xl:p-10 2xl:p-14  h-full border-x md:border-white/50  border-black/20 ">
+        <div className="flex flex-col items-start justify-start flex-1 p-6 xl:p-10 2xl:p-14  border-l h-full md:border-white/50  border-black/20 ">
           <h1
             className={`${primary.className} text-3xl md:text-6xl 2xl:text-7xl  md:pb-0 text-center md:text-left w-full`}
           >
-            <span className="text-2xl pl-1">Backed By</span> <br />
-            Dazzles
+            <span className="text-2xl pl-1 pb-2">Backed By</span> <br />
+            <span className="pt-4 inline-block">DAZZLES</span>
           </h1>
           <a
             href="https://www.instagram.com/dazzles_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -42,7 +42,7 @@ function BackedBy() {
       <div className="flex flex-col md:flex-row justify-around items-center w-full h-full xl:h-[90vh] 2xl:h-screen">
         <ContentBlock number="3" tag="rd Generation" title="Lineage" />
         <ContentBlock number="70" tag="Thousand" title="Sq.ft" />
-        <ContentBlock number="6+1" tag="In Making" title="Store" />
+        <ContentBlock number="6+1" tag="In Making" title="Stores" />
       </div>
     </section>
   );
@@ -64,7 +64,7 @@ const ContentBlock = ({ number, title, tag }: ContentBlockProps) => {
           className={`${nanum.className} relative text-[9rem] w-full text-center  z-0 opacity-70 `}
         >
           {number}
-          <span className="w-full text-sm">{tag}</span>
+          <span className="w-full text-base">{tag}</span>
         </h2>
       </div>
 

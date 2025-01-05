@@ -106,7 +106,7 @@ function WhyUsBackedBy() {
             <h1
               className={`${secondary.className} text-2xl z-50 relative w-1/2 text-center flex-1 px-20 `}
             >
-              We believe our brand will align seamlessly with the mall’s luxury
+              We believe our brand will align seamlessly with the mall’s
               environment and look forward to discussing the potential for
               leasing a space.
             </h1>

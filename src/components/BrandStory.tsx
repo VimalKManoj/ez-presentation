@@ -70,12 +70,7 @@ function BrandStory() {
               { xPercent: -20, opacity: 0 },
               { xPercent: 0, opacity: 1, duration: 1 }
             )
-            .to(".strike", { scaleX: 1, duration: 1.5, delay: 0.5 })
-            // .to(
-            //   ".main",
-            //   { color: "#d4d4d8", opacity: "0.5", duration: 1.5 },
-            //   "<"
-            // )
+            .to(".history", { opacity: 0.2, duration: 1.5, delay: 0.5 })
 
             .fromTo(
               ".main-2",
@@ -111,13 +106,12 @@ function BrandStory() {
       </div>
       <div className="w-full uppercase">
         <h1
-          className={`${primary.className} text-5xl z-50 relative  main w-fit`}
+          className={`${primary.className} text-5xl z-50 relative  main w-fit `}
         >
-          Brand’s History
-          <span className="inline-block w-full h-1 scale-x-0 origin-left bg-red-800 absolute inset-0 left-0 my-auto strike"></span>
+          Brand’s <span className="history">History</span>
         </h1>
         <h1
-          className={`${primary.className} text-5xl z-50 relative w-full main-2 pt-1`}
+          className={`${primary.className} text-5xl z-50 relative w-full main-2 pt-2`}
         >
           Fiction, Now Transpiring
         </h1>

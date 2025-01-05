@@ -63,7 +63,7 @@ function Banner() {
         src="/banner.jpg"
         alt="banner"
         layout="fill"
-        className="absolute top-0 left-0 w-full h-full image"
+        className="absolute top-0 left-0 w-full h-full image object-cover"
         priority
       />
       <div className="z-50 logo  h-full w-full flex justify-center items-center  absolute top-0 left-0 ">

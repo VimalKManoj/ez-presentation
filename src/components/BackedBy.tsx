@@ -3,7 +3,7 @@ import { Hanken_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
 
 const primary = localFont({
-  src: "./../app/fonts/vogue.ttf",
+  src: "./../app/fonts/Vogue.ttf",
 });
 const secondary = localFont({
   src: "./../app/fonts/ppneuemontreal-medium.otf",

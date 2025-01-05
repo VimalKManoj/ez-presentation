@@ -44,7 +44,7 @@ function Products() {
 
   return (
     <div
-      className="flex w-[90vw] h-full justify-between items-center border-y"
+      className="flex w-[90vw] h-full justify-between items-center "
       ref={AboutSectionRef}
     >
       {/* Parent div -total height */}
@@ -107,10 +107,7 @@ function Products() {
       <div className="hidden md:flex relative h-[400vh] w-1/2  flex-col items-center justify-between">
         {" "}
         <div className="sticky top-0  h-screen flex gap-4 justify-center items-start flex-col ">
-          <h1 className={`${secondary.className} text-4xl`}>Cocktail Dress</h1>
-          <h1 className={`${secondary.className} text-4xl`}>Ball Gown</h1>
-          <h1 className={`${secondary.className} text-4xl`}>Power Suit</h1>
-          <h1 className={`${secondary.className} text-4xl`}>Host Gown</h1>
+          <h1 className={`${secondary.className} text-4xl`}>Product Preview</h1>
         </div>
       </div>
     </div>

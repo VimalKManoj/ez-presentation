@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 import gsap from "gsap";
 
 const primary = localFont({
-  src: "./../app/fonts/Vogue.ttf",
+  src: "./../app/fonts/RadiantLight.ttf",
 });
 const secondary = localFont({
   src: "./../app/fonts/ppneuemontreal-thin.otf",
@@ -52,11 +52,11 @@ function TargetAudience() {
   };
 
   return (
-    <div className="h-screen w-[90vw] relative flex justify-center flex-col items-center px-40 border-y">
+    <div className="h-screen w-[90vw] relative flex justify-center flex-col items-center px-40 ">
       {/* "For Whom" Text */}
       <h1
         ref={forWhomRef}
-        className={`text-7xl ${primary.className} hover:text-red-800 transition-all duration-200 cursor-pointer`}
+        className={`text-7xl ${primary.className} hover:text-red-800 transition-all duration-200 cursor-pointer pl-8`}
         onClick={handleClick}
       >
         For Whom{" "}
@@ -66,7 +66,7 @@ function TargetAudience() {
           </span>
           <span
             ref={hyphenRef}
-            className="absolute left-0 top-2 opacity-0 transition-opacity"
+            className="absolute left-0 top-6 opacity-0 transition-opacity"
           >
             -
           </span>
@@ -76,14 +76,14 @@ function TargetAudience() {
       {/* Hidden Text */}
       <span
         ref={hiddenTextRef}
-        className={`text-4xl pt-6 ${secondary.className} opacity-0 `}
+        className={`text-2xl  ${secondary.className} opacity-0 pr-2 `}
       >
-        Different isn’t Daring, It’s Essential.
+        Different Isn’t Daring, It’s Essential.
       </span>
       <h1
         className={`absolute -bottom-10 right-0 text-[10rem] ${secondary.className} opacity-0 transition-opacity different`}
       >
-        <span className=" opacity-20"> Different</span>
+        <span className=" opacity-20 "> Different</span>
         <span className="text-red-800">.</span>
       </h1>
     </div>

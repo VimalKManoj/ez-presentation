@@ -21,11 +21,11 @@ function Video() {
   };
 
   return (
-    <div className="h-screen w-[90vw] flex relative justify-between items-center overflow-hidden py-20">
+    <div className="h-screen w-full flex relative justify-between items-center overflow-hidden py-20">
       <h1
-        className={`${secondary.className} text-4xl z-50 relative w-full text-left flex-1`}
+        className={`${secondary.className} pl-32 text-4xl z-50 relative w-full text-left flex-1`}
       >
-        Number one in every way.
+        Product Preview
       </h1>
       <div className="flex-1 relative">
         <div className="h-screen object-cover z-10 py-10 overflow-hidden flex flex-col justify-center items-center">
@@ -46,7 +46,11 @@ function Video() {
             className="absolute bottom-10 right-0 bg-white/20 text-black px-10 py-2 backdrop-blur-2xl  rounded-ss-md shadow-md z-50"
             onClick={toggleAudio}
           >
-            {isMuted ? <GoUnmute size={30} /> : <IoVolumeMuteOutline size={30} />}
+            {isMuted ? (
+              <GoUnmute size={30} />
+            ) : (
+              <IoVolumeMuteOutline size={30} />
+            )}
           </button>
         </div>
       </div>

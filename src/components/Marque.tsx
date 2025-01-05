@@ -23,7 +23,7 @@ function Marque() {
         });
 
         timeline.to(".slider-container", {
-          x: "-200%", // Moves the slider container completely out of view
+          x: "-120%", // Moves the slider container completely out of view
           ease: "power1.inOut",
         });
       }, MarqueRef);
@@ -58,7 +58,7 @@ function Marque() {
           loading="eager"
         />
         <Image
-          src="/place_3.jpg"
+          src="/place_6.jpg"
           width={1000}
           height={1000}
           alt="bg"
@@ -77,15 +77,6 @@ function Marque() {
         />
         <Image
           src="/place_5.jpg"
-          width={1000}
-          height={1000}
-          alt="bg"
-          className="h-full object-contain"
-          priority={true}
-          loading="eager"
-        />
-        <Image
-          src="/place_6.jpg"
           width={1000}
           height={1000}
           alt="bg"

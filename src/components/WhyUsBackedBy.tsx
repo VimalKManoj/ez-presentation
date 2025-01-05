@@ -79,18 +79,37 @@ function WhyUsBackedBy() {
       <div className="md:absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full">
         {/* <OurServices /> */}
         <div className="flex flex-col justify-center items-center w-full h-full py-52 pb-64 gap-10">
-          <h1
-            className={`${primary.className} text-6xl z-50 relative w-full text-center`}
-          >
-            Why Us?
-          </h1>
-          <h1
-            className={`${secondary.className} text-4xl z-50 relative w-1/2 text-center  `}
-          >
-            Our focus is on creating garments that combine elegance and
-            function. Every detail serves a purpose, ensuring you’re always
-            dressed for success.
-          </h1>
+          <div className="flex w-full justify-center items-center">
+            <h1
+              className={`${primary.className} text-6xl z-50 relative w-full text-center flex-1`}
+            >
+              UB
+            </h1>
+            <h1 className={`text-red-800   ${secondary.className} text-3xl`}>
+              X
+            </h1>
+            <h1
+              className={`${primary.className} text-6xl z-50 relative w-full text-center flex-1`}
+            >
+              EZ
+            </h1>
+          </div>
+          <div className="flex ">
+            <h1
+              className={`${secondary.className} text-2xl z-50 relative w-1/2 text-center flex-1 px-20 `}
+            >
+              The iconic UB City aligns with EZ’s vision to be a global brand in
+              the lifestyle space. And it provides the perfect launchpad for
+              the brand.
+            </h1>
+            <h1
+              className={`${secondary.className} text-2xl z-50 relative w-1/2 text-center flex-1 px-20 `}
+            >
+              We believe our brand will align seamlessly with the mall’s luxury
+              environment and look forward to discussing the potential for
+              leasing a space.
+            </h1>
+          </div>
         </div>
         <BackedBy />
       </div>

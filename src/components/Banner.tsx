@@ -22,7 +22,7 @@ function Banner() {
 
           gsap.set(".logo", { backgroundColor: "white" });
           gsap.set(".logo-ez", { opacity: 0, scale: 1.2, xPercent: 0 });
-          gsap.set(".tag", { opacity: 0, xPercent: -170 });
+          gsap.set(".tag", { opacity: 0 });
           gsap.set(".image", { scale: 1.2, opacity: 0.8 });
 
           timeline
@@ -33,9 +33,12 @@ function Banner() {
             })
             .to(".image", { scale: 1, opacity: 1, duration: 1 }, "<")
             .to(".logo-ez", { scale: 1, duration: 1 }, "<")
-            .to(".logo-ez", { xPercent: -180, duration: 2 })
-            .to(".tag", { opacity: 1, duration: 2 }, "<")
-            .to(".tag", { xPercent: 0, duration: 2 }, "-=1.8");
+            .to(".logo-ez", {
+              xPercent: -180,
+              duration: 2,
+              ease: "power2.inOut",
+            })
+            .to(".tag", { opacity: 1, duration: 2 });
         }, BannerRef);
 
         return () => ctx.revert();

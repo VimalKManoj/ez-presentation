@@ -9,9 +9,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 import localFont from "next/font/local";
 import BackedBy from "./BackedBy";
+import { Italiana } from "next/font/google";
 
-const primary = localFont({
-  src: "./../app/fonts/RadiantLight.ttf",
+const primary = Italiana({
+  weight: "400",
+  subsets: ["latin"],
 });
 const secondary = localFont({
   src: "./../app/fonts/ppneuemontreal-thin.otf",

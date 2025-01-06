@@ -1,13 +1,21 @@
 "use client";
 import Image from "next/image";
+import { Italiana } from "next/font/google";
+
+const primary = Italiana({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 import React, { useRef } from "react";
 import localFont from "next/font/local";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-const primary = localFont({
-  src: "./../app/fonts/RadiantLight.ttf",
-});
+// const primary = localFont({
+//   src: "./../app/fonts/RadiantLight.ttf",
+// });
+
 const secondary = localFont({
   src: "./../app/fonts/ppneuemontreal-thin.otf",
 });
@@ -70,7 +78,7 @@ function BrandStory() {
               { xPercent: -20, opacity: 0 },
               { xPercent: 0, opacity: 1, duration: 1 }
             )
-            .to(".history", { opacity: 0.2, duration: 1.5, delay: 0.5 })
+            .to(".history", { opacity: 0.4, duration: 1.5, delay: 0.5 })
 
             .fromTo(
               ".main-2",
@@ -106,12 +114,12 @@ function BrandStory() {
       </div>
       <div className="w-full uppercase">
         <h1
-          className={`${primary.className} text-5xl z-50 relative  main w-fit `}
+          className={`${primary.className} text-5xl z-50 relative  main w-fit pt-4 `}
         >
           Brand’s <span className="history">History</span>
         </h1>
         <h1
-          className={`${primary.className} text-5xl z-50 relative w-full main-2 pt-2`}
+          className={`${primary.className} text-5xl z-50 relative w-full main-2 pt-4`}
         >
           Fiction, Now Transpiring
         </h1>

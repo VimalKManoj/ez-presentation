@@ -3,8 +3,11 @@ import { Hanken_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
 import { FaInstagram } from "react-icons/fa";
 
-const primary = localFont({
-  src: "./../app/fonts/RadiantLight.ttf",
+import { Italiana } from "next/font/google";
+
+const primary = Italiana({
+  weight: "400",
+  subsets: ["latin"],
 });
 const secondary = localFont({
   src: "./../app/fonts/ppneuemontreal-medium.otf",
@@ -18,14 +21,14 @@ const nanum = Hanken_Grotesk({
 
 function BackedBy() {
   return (
-    <section className="w-full min-h-screen flex flex-col gap-20 justify-around z-20 px-6 md:px-10 bg-white text-black md:text-inherit md:bg-transparent mb-96">
+    <section className="w-full min-h-screen flex flex-col gap-20 justify-around z-20 px-6 md:px-10 bg-white text-black md:text-inherit md:bg-transparent 2xl:mb-96">
       <div className="flex flex-col md:flex-row justify-around items-center w-full md:h-screen">
-        <div className="flex flex-col items-start justify-start flex-1 p-6 xl:p-10 2xl:p-14  border-l h-full md:border-white/50  border-black/20 ">
+        <div className="flex flex-col items-start justify-start flex-1 p-6 xl:p-10 2xl:p-14  border-l h-[50vh] md:border-white/50  border-black/20 ">
           <h1
             className={`${primary.className} text-3xl md:text-6xl 2xl:text-7xl  md:pb-0 text-center md:text-left w-full`}
           >
             <span className="text-2xl pl-1 pb-2">Backed By</span> <br />
-            <span className="pt-4 inline-block">DAZZLES</span>
+            <span className=" pb-2 inline-block">DAZZLES</span>
           </h1>
           <a
             href="https://www.instagram.com/dazzles_studio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -58,7 +61,7 @@ type ContentBlockProps = {
 
 const ContentBlock = ({ number, title, tag }: ContentBlockProps) => {
   return (
-    <div className="relative flex flex-col items-center justify-center flex-1 p-10 py-20 md:py-0 md:p-6  xl:p-10 2xl:p-14 h-[50vh] md:h-full border-x md:border-r md:border-white/50 border-black/20  overflow-hidden  md:first:border-l">
+    <div className="relative flex flex-col items-center justify-center flex-1 p-10 py-20 md:py-0 md:p-6  xl:p-10 2xl:p-14 h-[50vh] border-x md:border-r md:border-white/50 border-black/20  overflow-hidden  md:first:border-l">
       <div className="absolute mx-auto inset-0 w-full flex-col justify-start  flex-1  flex number ">
         <h2
           className={`${nanum.className} relative text-[9rem] w-full text-center  z-0 opacity-70 `}
@@ -68,9 +71,9 @@ const ContentBlock = ({ number, title, tag }: ContentBlockProps) => {
         </h2>
       </div>
 
-      <div className="pt-20">
+      <div className="pt-20 2xl:pt-40">
         <h2
-          className={`${secondary.className} font-bold text-2xl 2xl:text-3xl pt-20`}
+          className={`${secondary.className} font-bold text-2xl 2xl:text-3xl 2xl:pt-20`}
         >
           {title}
         </h2>

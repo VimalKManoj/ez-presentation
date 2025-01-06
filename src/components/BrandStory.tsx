@@ -78,7 +78,7 @@ function BrandStory() {
               { xPercent: -20, opacity: 0 },
               { xPercent: 0, opacity: 1, duration: 1 }
             )
-            .to(".history", { opacity: 0.4, duration: 1.5, delay: 0.5 })
+            .to(".strike", { scaleX: 1, duration: 1.5, delay: 0.5 })
 
             .fromTo(
               ".main-2",
@@ -116,7 +116,8 @@ function BrandStory() {
         <h1
           className={`${primary.className} text-5xl z-50 relative  main w-fit pt-4 `}
         >
-          Brand’s <span className="history">History</span>
+          Brand’s History
+          <span className="w-full h-1 absolute left-0 top-1/2 -translate-y-1/2 bg-red-800 mt-2 scale-x-0 origin-left strike"></span>
         </h1>
         <h1
           className={`${primary.className} text-5xl z-50 relative w-full main-2 pt-4`}

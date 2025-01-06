@@ -81,7 +81,7 @@ function WhyUsBackedBy() {
 
       <div className="md:absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full">
         {/* <OurServices /> */}
-        <div className="flex flex-col justify-center items-center w-full h-full py-52 pb-64 gap-10">
+        <div className="flex flex-col justify-center items-center w-full h-full py-52 pb-44 2xl:pb-64 gap-10">
           <div className="flex w-full justify-center items-center">
             <h1
               className={`${primary.className} text-6xl z-50 relative w-full text-center flex-1`}

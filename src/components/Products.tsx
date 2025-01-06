@@ -49,7 +49,7 @@ function Products() {
     >
       {/* Parent div -total height */}
 
-      <div className="relative h-[450vh] w-full md:w-1/2 flex flex-col items-center justify-between">
+      <div className="relative h-[480vh] w-full md:w-1/2 flex flex-col items-center justify-between">
         {/* Sticky Sections */}
         <div className="sticky top-4 w-full h-screen flex justify-around items-center flex-col  card-one">
           <div className="h-[85vh]  w-5/6  overflow-hidden">
@@ -117,7 +117,7 @@ function Products() {
           </div>
         </div>
       </div>
-      <div className="hidden md:flex relative h-[450vh] w-1/2  flex-col items-center justify-between">
+      <div className="hidden md:flex relative h-[480vh] w-1/2  flex-col items-center justify-between">
         {" "}
         <div className="sticky top-0  h-screen flex gap-4 justify-center items-start flex-col ">
           <h1 className={`${secondary.className} text-4xl`}>Product Preview</h1>

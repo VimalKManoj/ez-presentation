@@ -44,7 +44,7 @@ function Products() {
 
   return (
     <div
-      className="flex w-[90vw] h-full justify-between items-center "
+      className="flex w-full md:w-[90vw] h-full justify-between items-center "
       ref={AboutSectionRef}
     >
       {/* Parent div -total height */}

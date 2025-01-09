@@ -21,14 +21,14 @@ function Video() {
   };
 
   return (
-    <div className="h-screen w-full flex relative justify-between items-center overflow-hidden py-20">
+    <div className="h-full md:h-screen w-full flex flex-col md:flex-row relative justify-between items-center overflow-hidden py-20">
       <h1
-        className={`${secondary.className} pl-32 text-4xl z-50 relative w-full text-left flex-1`}
+        className={`${secondary.className} md:pl-32 text-4xl z-50 relative w-full text-center  md:text-left flex-1 order-2 md:order-1`}
       >
         Product Preview
       </h1>
-      <div className="flex-1 relative">
-        <div className="h-screen object-cover z-10 py-10 overflow-hidden flex flex-col justify-center items-center">
+      <div className="flex-1 relative order-1 md:order-2">
+        <div className="h-[90vh] md:h-screen object-cover z-10 py-10 overflow-hidden flex flex-col justify-center items-center">
           <video
             ref={videoRef}
             className="w-full h-full object-cover hero-video"

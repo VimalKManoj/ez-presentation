@@ -61,66 +61,64 @@ function BrandStory() {
   );
   useGSAP(
     () => {
-      if (window.matchMedia("(min-width: 640px)").matches) {
-        const ctx = gsap.context(() => {
-          const timeline = gsap.timeline({
-            scrollTrigger: {
-              trigger: BrandStoryRef.current,
-              start: "top 10%", // Starts at 40% of viewport height
-              end: "bottom bottom", // Ends at 100vh from the start of videoContainerRef
-              toggleActions: "play none none reset",
-            },
-          });
+      const ctx = gsap.context(() => {
+        const timeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: BrandStoryRef.current,
+            start: "top 10%", // Starts at 40% of viewport height
+            end: "bottom bottom", // Ends at 100vh from the start of videoContainerRef
+            toggleActions: "play none none reset",
+          },
+        });
 
-          timeline
-            .fromTo(
-              ".main",
-              { xPercent: -20, opacity: 0 },
-              { xPercent: 0, opacity: 1, duration: 1 }
-            )
-            .to(".strike", { scaleX: 1, duration: 1.5, delay: 0.5 })
+        timeline
+          .fromTo(
+            ".main",
+            { xPercent: -20, opacity: 0 },
+            { xPercent: 0, opacity: 1, duration: 1 }
+          )
+          .to(".strike", { scaleX: 1, duration: 1.5, delay: 0.5 })
 
-            .fromTo(
-              ".main-2",
-              { xPercent: -20, opacity: 0 },
-              { xPercent: 0, opacity: 1, duration: 1 }
-            )
-            .fromTo(
-              ".sub",
-              { xPercent: 20, opacity: 0 },
-              { xPercent: 0, opacity: 1, duration: 1 }
-            );
-        }, BrandStoryRef);
+          .fromTo(
+            ".main-2",
+            { xPercent: -20, opacity: 0 },
+            { xPercent: 0, opacity: 1, duration: 1 }
+          )
+          .fromTo(
+            ".sub",
+            { xPercent: 20, opacity: 0 },
+            { xPercent: 0, opacity: 1, duration: 1 }
+          );
+      }, BrandStoryRef);
 
-        return () => ctx.revert();
-      }
+      return () => ctx.revert();
     },
     { scope: BrandStoryRef }
   );
   return (
     <div
-      className="h-screen w-full flex-col relative flex justify-between items-center px-56 overflow-hidden py-20"
+      className="h-screen md:w-full flex-col relative flex justify-between items-center px-6 md:px-56 overflow-hidden py-20"
       ref={BrandStoryRef}
     >
-      <div className="absolute mx-auto inset-0 z-10 w-1/2 overflow-hidden my-10 brand_story">
+      <div className="absolute h-full md:h-auto mx-auto inset-0 z-10 md:w-1/2 overflow-hidden md:my-10 brand_story">
         <Image
           src="/brand_story.jpg"
           width={1000}
           height={1000}
           alt="brand_story"
-          className="image-1 opacity-90"
+          className="image-1 opacity-90 h-full md:h-auto object-cover"
           priority
         />
       </div>
       <div className="w-full uppercase">
         <h1
-          className={`${primary.className} text-5xl z-50 relative  main w-fit pt-4 `}
+          className={`${primary.className} text-4xl md:text-5xl z-50 relative  main w-fit pt-4 `}
         >
           Brand’s History
           <span className="w-full h-1 absolute left-0 top-1/2 -translate-y-1/2 bg-red-800 mt-2 scale-x-0 origin-left strike"></span>
         </h1>
         <h1
-          className={`${primary.className} text-5xl z-50 relative w-full main-2 pt-4`}
+          className={`${primary.className} text-4xl md:text-5xl z-50 relative w-full main-2 pt-4`}
         >
           Fiction, Now Transpiring
         </h1>

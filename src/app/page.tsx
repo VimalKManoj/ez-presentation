@@ -8,7 +8,7 @@ import WhyUsBackedBy from "@/components/WhyUsBackedBy";
 
 export default function Home() {
   return (
-    <div className=" flex flex-col justify-centert items-center">
+    <div className=" flex flex-col justify-centert items-center select-none md:select-auto">
       <Banner />
       <BrandStory />
       <TargetAudience />

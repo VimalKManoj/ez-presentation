@@ -67,21 +67,32 @@ function WhyUsBackedBy() {
       <div className="absolute bottom-0 left-0 h-[20vh] w-full  z-20 bg-gradient-to-t from-[#09090b] "></div>
       <div className="absolute top-0 left-0 h-full w-[35vw]  z-20 bg-gradient-to-r from-[#09090b] "></div>
       <div className="absolute top-0 right-0 h-full w-[30vw]  z-20 bg-gradient-to-l from-[#09090b] "></div>
-      <div>
+      <div className="hidden md:block">
         <Image
           src="/place.jpg"
           width={1000}
           height={1000}
           alt="bg"
-          className=" w-full h-full object-cover relative bottom-60 z-0 parallax-img hidden md:block grayscale opacity-60"
+          className=" w-full h-full object-cover relative bottom-60 z-0 parallax-img  grayscale opacity-60"
+          priority={true}
+          loading="eager"
+        />
+      </div>
+      <div className="md:hidden absolute h-full">
+        <Image
+          src="/place.jpg"
+          width={1000}
+          height={1000}
+          alt="bg"
+          className=" w-full h-full object-cover relative bottom-60 z-0 parallax-img  grayscale opacity-60"
           priority={true}
           loading="eager"
         />
       </div>
 
-      <div className="md:absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full">
+      <div className="relative md:absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full">
         {/* <OurServices /> */}
-        <div className="flex flex-col justify-center items-center w-full h-full py-52 pb-44 2xl:pb-64 gap-10">
+        <div className="flex-col justify-center items-center w-full h-full py-52 pb-44 2xl:pb-64 gap-10 hidden md:flex">
           <div className="flex w-full justify-center items-center">
             <h1
               className={`${primary.className} text-6xl z-50 relative w-full text-center flex-1`}
@@ -107,6 +118,39 @@ function WhyUsBackedBy() {
             </h1>
             <h1
               className={`${secondary.className} text-2xl z-50 relative w-1/2 text-center flex-1 px-20 `}
+            >
+              We believe our brand will align seamlessly with the mall’s
+              environment and look forward to discussing the potential for
+              leasing a space.
+            </h1>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center w-full h-full py-52 pb-44 2xl:pb-64 gap-10 md:hidden">
+          <div className="flex flex-col w-full justify-center items-center">
+            <h1
+              className={`${primary.className} text-6xl z-50 relative w-full text-center flex-1`}
+            >
+              UB
+            </h1>
+            <h1
+              className={`${secondary.className} text-2xl z-50 relative md:w-1/2 text-center flex-1 px-4 pt-6 md:px-20 `}
+            >
+              The iconic UB City aligns with EZ’s vision to be a global brand in
+              the lifestyle space. And it provides the perfect launchpad for the
+              brand.
+            </h1>
+          </div>
+          <h1 className={`text-red-800   ${secondary.className} text-3xl`}>
+            X
+          </h1>
+          <div className="flex flex-col w-full justify-center items-center">
+            <h1
+              className={`${primary.className} text-6xl z-50 relative w-full text-center flex-1`}
+            >
+              EZ
+            </h1>
+            <h1
+              className={`${secondary.className} text-2xl z-50 relative  md:w-1/2 text-center flex-1 px-4 pt-6 md:px-20 `}
             >
               We believe our brand will align seamlessly with the mall’s
               environment and look forward to discussing the potential for

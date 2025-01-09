@@ -12,33 +12,35 @@ function Marque() {
 
   useGSAP(
     () => {
-      const ctx = gsap.context(() => {
-        const timeline = gsap.timeline({
-          scrollTrigger: {
-            trigger: MarqueRef.current,
-            start: "top 80%", // Animation starts when the top of the container reaches 80% of the viewport
-            end: "bottom 20%", // Animation ends when the bottom of the container reaches 20% of the viewport
-            scrub: true, // Makes the animation follow the scroll position smoothly
-          },
-        });
+      if (window.matchMedia("(min-width: 640px)").matches) {
+        const ctx = gsap.context(() => {
+          const timeline = gsap.timeline({
+            scrollTrigger: {
+              trigger: MarqueRef.current,
+              start: "top 80%", // Animation starts when the top of the container reaches 80% of the viewport
+              end: "bottom 20%", // Animation ends when the bottom of the container reaches 20% of the viewport
+              scrub: true, // Makes the animation follow the scroll position smoothly
+            },
+          });
 
-        timeline.to(".slider-container", {
-          x: "-120%", // Moves the slider container completely out of view
-          ease: "power1.inOut",
-        });
-      }, MarqueRef);
+          timeline.to(".slider-container", {
+            x: "-120%", // Moves the slider container completely out of view
+            ease: "power1.inOut",
+          });
+        }, MarqueRef);
 
-      return () => ctx.revert();
+        return () => ctx.revert();
+      }
     },
     { scope: MarqueRef }
   );
 
   return (
     <div
-      className="w-full h-[40vh] flex justify-start items-center overflow-hidden mb-40"
+      className="w-full md:h-[40vh] flex flex-col md:flex-row justify-start items-center overflow-hidden  mb-40"
       ref={MarqueRef}
     >
-      <div className="w-full h-full flex justify-start items-center gap-6 slider-container">
+      <div className="w-full h-full flex flex-col md:flex-row  justify-start items-center mt-30 md:mt-0 gap-6 slider-container">
         <Image
           src="/place_1.jpg"
           width={1000}
